@@ -1,99 +1,102 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #2b2922;
-  font-family: "Montserrat";
-  overflow-x: hidden;
+body{
+    background-color: hsl(40deg 12% 15%);
+    font-family: "Montserrat";
 }
-
-/* ------------------------------ */
-/* ---------- NAVBAR ------------ */
-/* ------------------------------ */
 .navbar{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 30px;
+    display: flex;
+    padding: 35px;
+    padding-left: 165px;
+    margin-top: -8px;
 }
-.navbar div img{
-  width: 100px;
+.list{
+    display: flex;
+    color: rgba(255, 255, 255, 0.498);
+    font-size: 16px;
+    padding-left: 500px;
+    font-family: "Montserrat";
+    list-style-type: none;
 }
-
-.navbar .list{
-  display: flex;
-  list-style-type: none;
-  color: #808080;
-  flex-direction: row;
-  justify-content: space-around;
+.list li{
+    display: flex;
+    padding-right: 80px;
 }
-
-.list-item:first-child{
-  color: #fff;
-  font-style: bold;
-}
-
-.list .list-item{
-  padding: 10px 20px;
-}
+.list li:hover {
+    color: #ffffff;
+  }
 .button-small{
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: #daa520;
-  background-color: transparent;
-  border: 1px solid #daa520;
+    display: flex;
+    top: 4%;
+    left: 75%;
+    font-size: 20px;
+    padding: 12px 26px;
+    border-radius: 10px;
+    background-color: #2b2822;
+    color: hsl(50deg 50% 42%);
+    border: 1px solid hsl(50deg 50% 42%);
+    position: relative;
 }
-/* ------------------------------ */
-/* ---------- HERO ------------ */
-/* ------------------------------ */
 .first_section{
-  margin: 4% 8%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
 }
-
-.first_section .hero-heading{
-  color: #fff;
-  font-size: 4rem;
-  width:50%;
-  text-transform: capitalize;
-  font-weight: 900;
+.hero{
+    display: flex;
+    flex-direction: column;
 }
-
-.first_section .hero-body{
-  width: 50%;
-  padding-left: 5%;
-  color: #94928a;
-  font-size: 16px;
-  padding-right: 180px;
-  font-weight: 500;
+.hero-heading{
+    display: flex;
+    color: white;
+    font-size: 70px;
+    padding-left: 151px;
+    padding-right: 400px;
+    margin: 18px;
+    
 }
-
-section[aria-label="hero"] img{
-  width: 100%;
-  height: 80vh;
+.hero-body{
+    display: flex;
+    position: relative;
+    top: 12%;
+    right: 12%;
+    color: white;
+    
+}
+.mid{
+    display: flex;
+    height: fit-content;
+}
+.mid img{
+    width: 100%;
+    height: 53vh;
+    object-fit: cover;
+   
+}
+.bottom{
+    display: flex;
 }
 .bottom-main{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -1px;
-}
-.button-large-prev{
-  background-color: #39372d;
-  padding: 20px 40px;
-}
-
-.button-large-next{
-  background-color: #a08f36;
-  padding: 20px 30px;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 4px;
 }
 .left_icon{
-  color:#fff;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 5px 10px;
-  background-color: transparent;
-  font-size: 20px;
+    font-size: 28px;
+    border: 1px solid hsl(50deg 50% 42%);
+    color: hsl(50deg 50% 42%); 
+    border-radius: 50%;
+    padding: 5px 15px;
 }
+.button-large-prev{
+    padding: 25px 23px;
+    background-color: hsl(50deg 12% 20%);
+    color: rgb(255, 255, 255);
+}
+.button-large-next{
+    padding: 26px 18px;
+    background-color: hsl(50deg 50% 42%);  
+}
+.button-large-next .left_icon{
+    color: white;
+    border: 1px solid white;
+}
+
