@@ -1,5 +1,3 @@
-# Created By Punit Maheshwari
-
 # Topic I learned
 
 > In this project i learned about how to use Flexbox properties and set images in the backgroud.
